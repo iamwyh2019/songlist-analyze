@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分析结果</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 5%;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        --歌单#{{id}}--<br>
+        {% for file in filepath %}
+            <img width="90%" src={{ file }}>
+        {% endfor %}
+    </div>  
+</body>
+</html>
